@@ -1,10 +1,10 @@
 const MongoClient = require('mongodb').MongoClient;
 
 // 连接URL
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb://test:test@localhost:27017/test';
 
 // 数据库名称
-const dbName = 'nodejsBook';
+const dbName = 'test';
 
 // 创建MongoClient客户端
 const client = new MongoClient(url);

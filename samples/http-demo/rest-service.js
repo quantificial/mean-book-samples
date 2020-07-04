@@ -14,6 +14,9 @@ const server = http.createServer((req, res) => {
 
     // 判断不同的方法类型
     switch (req.method) {
+      case 'GET':
+        console.log(req.url);
+        break;
       case 'POST':
         users.push(user);
         console.log(users);

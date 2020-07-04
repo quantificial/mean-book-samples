@@ -8,6 +8,8 @@ const { message } = new assert.AssertionError({
     operator: 'strictEqual'
 });
 
+assert.strictEqual(10,100);
+
 // 验证错误信息输出:
 try {
     // 验证两个值是否相等
@@ -25,3 +27,5 @@ try {
     assert.strictEqual(err.operator, 'strictEqual'); // true
     assert.strictEqual(err.generatedMessage, true);  // true
 }
+
+

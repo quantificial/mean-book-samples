@@ -4,4 +4,8 @@ const port = 8080;
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
+app.get('/test/:id', (req,res) => {
+    res.send(req.params);
+} )
+
 app.listen(port, () => console.log(`Server listening on port ${port}!`));
