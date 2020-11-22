@@ -18,6 +18,8 @@ try {
     // 验证类型
     assert(err instanceof assert.AssertionError); // true
 
+    console.log('@@@' + err.message);
+
     // 验证值
     assert.strictEqual(err.message, message); // true
     assert.strictEqual(err.name, 'AssertionError [ERR_ASSERTION]'); // false
